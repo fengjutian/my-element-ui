@@ -90,8 +90,8 @@ import Empty from '../packages/empty/index.js';
 import Descriptions from '../packages/descriptions/index.js';
 import DescriptionsItem from '../packages/descriptions-item/index.js';
 import Result from '../packages/result/index.js';
-import locale from 'element-ui/src/locale';
-import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
+import locale from 'i-element-ui/src/locale';
+import CollapseTransition from 'i-element-ui/src/transitions/collapse-transition';
 
 const components = [
   ButtonMy,
@@ -214,7 +214,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '1.0.1',
+  version: '1.0.3',
   locale: locale.use,
   i18n: locale.i18n,
   install,
