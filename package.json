@@ -1,8 +1,8 @@
 {
-  "name": "my-element-ui",
-  "version": "2.15.13",
+  "name": "i-element-ui",
+  "version": "1.0.1",
   "description": "A Component Library for Vue.js.",
-  "main": "lib/element-ui.common.js",
+  "main": "lib/i-element-ui.common.js",
   "files": [
     "lib",
     "src",
@@ -150,6 +150,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "engines": {
-    "node": ">11.0.0 <12"
+    "node": ">=11.0.0 <12"
   }
 }
