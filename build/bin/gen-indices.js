@@ -1,12 +1,17 @@
 'use strict';
 
+// 使用 algoliasearch 轻松实现文档全站搜索。
 const fs = require('fs');
 const path = require('path');
 const algoliasearch = require('algoliasearch');
+// 中文转拼音
 const slugify = require('transliteration').slugify;
+// 获取Admin API KEY, 用来管理云端数据，项目中没有上传此文件
 const key = require('./algolia-key');
 
+// 初始化algoliasearch服务， 参数为Application ID, Admin API KEY
 const client = algoliasearch('4C63BTGP6S', key);
+// 多语言的文芳文件夹映射关系
 const langs = {
   'zh-CN': 'element-zh',
   'en-US': 'element-en',
@@ -19,6 +24,7 @@ const langs = {
   const index = client.initIndex(indexName);
   index.clearIndex(err => {
     if (err) return;
+    // 获取example/docs/{lang} 目录下文件列表
     fs.readdir(path.resolve(__dirname, `../../examples/docs/${ lang }`), (err, files) => {
       if (err) return;
       let indices = [];

@@ -1,4 +1,5 @@
 {
+  "button-my": "./packages/button-my/index.js",
   "pagination": "./packages/pagination/index.js",
   "dialog": "./packages/dialog/index.js",
   "autocomplete": "./packages/autocomplete/index.js",

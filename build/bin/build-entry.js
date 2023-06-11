@@ -1,6 +1,10 @@
+// 组件清单
 var Components = require('../../components.json');
 var fs = require('fs');
 var render = require('json-templater/string');
+// 大驼峰命名规则 组件名称经常使用-分隔，import导入后要用首字母大写驼峰命名
+// 组件checkbox-button  => CheckboxButton
+// import CheckboxButton from '../.packages/checkbox-button/index.js'
 var uppercamelcase = require('uppercamelcase');
 var path = require('path');
 var endOfLine = require('os').EOL;
